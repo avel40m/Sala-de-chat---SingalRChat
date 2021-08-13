@@ -1,0 +1,34 @@
+﻿@page
+
+<div class="container">
+    <div class="row">&nbsp;</div>
+    <div class="row">
+        <div class="col-2">Ingresar su nombre: </div>
+        <div class="col-4"><input type="text" id="userInput" class="form-control"></div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-2">Escriba su mensaje: </div>
+        <div class="col-4"><input type="text" id="messageInput" class="form-control"></div>
+    </div>
+    <div class="row">&nbsp;</div>
+    <div class="row">
+        <div class="col-2">
+            <input type="button" id="sendButton" value="Enviar Mensaje" class="btn btn-success btn-block">
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <hr>
+    </div>
+</div>
+<div class="row">
+    <div class="col-6">
+        <ul id="messagesList"></ul>
+    </div>
+</div>
+
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/chat.js"></script>
